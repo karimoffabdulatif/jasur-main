@@ -1,4 +1,6 @@
 import React, { useRef } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Home from './components/home';
 import Vaqt from './components/vaqt';
 import Tak from './components/tak';
@@ -8,22 +10,35 @@ import Visits from './components/visits';
 import Contact from './components/contact';
 import Footer from './components/footer';
 
+import VictorsList from '../src/components/page/VisitorsList'
+
 
 export default function App() {
   const audioRef = useRef(null);
+
   return (
-    <>
+    <Router>
       <div className="container mx-auto px-36">
         <audio ref={audioRef} src="/romantic.mp3" loop />
-        <Home />
-        <Vaqt />
-        <Tak />
-        <Manzil />
-        <Tadbir />
-        <Visits />
-        <Contact />
+        
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Home />
+              <Vaqt />
+              <Tak />
+              <Manzil />
+              <Tadbir />
+              <Visits />
+              <Contact />
+            </>
+          } />
+          <Route path="/page" element={<VictorsList />} />
+          {/* Boshqa sahifalar uchun routelar */}
+        </Routes>
       </div>
+
       <Footer />
-    </>
+    </Router>
   );
 }
