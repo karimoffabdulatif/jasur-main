@@ -25,7 +25,7 @@ const Tak = () => {
       <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
         <div className="text-center max-w-[700px] px-1">
           <motion.p
-            className="petit-formal-script-regular pb-6  sm:pb-11 text-white text-[32px] sm:text-4xl"
+            className="petit-formal-script-regular pt-6 sm:pt-0 pb-6  sm:pb-11 text-white text-[32px] sm:text-4xl"
             initial={{ opacity: 0, y: 20 }}
             animate={invitationInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
@@ -40,7 +40,7 @@ const Tak = () => {
           ].map((text, index) => (
             <motion.p
               key={index}
-              className={`text-white font-serif pt-4 text-[18px] sm:text-2xl ${index === 2 ? 'pt-8 sm:pt-0 text-[35px] sm:text-[50px] font-semibold pb-0' : 'text-[18px]'}`}
+              className={`text-white font-serif pt-2 text-[18px] sm:text-2xl ${index === 2 ? 'pt-8 sm:pt-0 text-[35px] sm:text-[50px] font-semibold pb-0' : 'text-[18px]'}`}
               initial={{ opacity: 0, y: 20 }}
               animate={invitationInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.8 + index * 0.5, duration: 0.8 }}
