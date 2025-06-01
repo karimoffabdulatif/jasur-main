@@ -33,28 +33,28 @@ const Contact = () => {
       >
         <motion.p
           variants={itemVariants}
-          className='petit-formal-script-regular flex justify-center pl-5 text-[60px] text-white'
+          className='petit-formal-script-regular flex justify-center pl-5 text-[35px] sm:text-[60px] text-white'
         >
           Kontaktlar
         </motion.p>
 
         <motion.p
           variants={itemVariants}
-          className="font-serif text-[20px] pt-7 text-center text-white max-w-3xl"
+          className="font-serif text-[16px] sm:text-[20px] pt-4 sm:pt-7 text-center text-white max-w-3xl"
         >
           Huddi shunday to'y taklifnomasi haqida sizda qandaydir savollar bo‘lsa, quyidagi administratorga murojaat qilishingiz mumkin:
         </motion.p>
 
         <motion.p
           variants={itemVariants}
-          className="font-serif text-[30px] font-bold pt-7 text-center text-white"
+          className="font-serif text-[25px] sm:text-[30px] font-bold pt-6 sm:pt-7 text-center text-white"
         >
           Abdulatif
         </motion.p>
 
         <motion.div
           variants={itemVariants}
-          className='text-center gap-5 flex justify-center text-white text-5xl pt-5'
+          className='text-center gap-2 sm:gap-5 flex justify-center text-white text-2xl sm:text-5xl pt-3 sm:pt-5'
         >
           <a href="tel:+998940017653" target="_blank" rel="noopener noreferrer">
             <LocalPhoneIcon style={{ fontSize: "35px" }} />
@@ -67,28 +67,28 @@ const Contact = () => {
 
         <motion.p
           variants={itemVariants}
-          className='petit-formal-script-regular flex pt-10 justify-center pl-5 text-[30px] text-white'
+          className='petit-formal-script-regular flex sm:pt-10 justify-center pl-5 text-[24px] sm:text-[30px] text-white'
         >
           www.karimoff-dev.uz
         </motion.p>
 
         <motion.button
           variants={itemVariants}
-          className="bg-white text-black justify-center flex items-center text-[18px] px-8 py-1 rounded-full border-2 border-black hover:bg-white hover:text-black transition-all duration-300 shadow-md hover:shadow-lg mx-auto mt-2 animate-pulse"
+          className="bg-white text-black justify-center flex items-center text-[18px] px-8 py-1 rounded-full border-2 border-black hover:bg-white hover:text-black transition-all duration-300 shadow-md hover:shadow-lg mx-auto mt-6 sm:mt-2 animate-pulse"
         >
           Tashrif buyurish
         </motion.button>
 
         <motion.p
           variants={itemVariants}
-          className='font-serif text-[20px] pt-10 text-center text-white max-w-3xl'
+          className='font-serif text-[16px] sm:text-[20px] pt-10 text-center text-white max-w-3xl'
         >
           Sizning qulayligingiz uchun bu funksiya optimallashtirilgan va foydalanuvchilar uchun maksimal oddiy qilib ishlab chiqilgan.
         </motion.p>
 
         <motion.p
           variants={itemVariants}
-          className='font-serif text-[20px] pt-10 text-center text-white max-w-3xl'
+          className='font-serif text-[16px] sm:text-[20px] pt-10 text-center text-white max-w-3xl'
         >
           Bu sahifa — zamonaviy texnologiyalar, qulay dizayn va foydalanuvchi ehtiyojlarini inobatga olgan holda yaratilgan. Mana shunday taklifnoma kerak bo'lsa bemalol men bilan bog'laning.
         </motion.p>
@@ -97,7 +97,7 @@ const Contact = () => {
           variants={itemVariants}
           src={Gul}
           alt="img"
-          className='w-[150px] h-auto pt-10 opacity-95'
+          className='w-[100px] sm:w-[150px] h-auto pt-10 opacity-95'
         />
       </motion.div>
     </section>

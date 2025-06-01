@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <section className="w-full bg-black opacity-90">
-      <p className="text-white font-serif text-center py-6">
+      <p className="text-white text-[14px] font-serif text-center py-6">
         <span className="font-sans">©2025</span> Все права защищены.{" "}
         <span className="text-amber-300">online taklifnomalar</span>
       </p>
