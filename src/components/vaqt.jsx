@@ -42,9 +42,9 @@ const Vaqt = () => {
       initial={{ opacity: 0, y: 50, scale: 0.95 }}
       animate={countdownInView ? { opacity: 1, y: 0, scale: 1 } : {}}
       transition={{ duration: 1, ease: 'easeOut' }}
-      className="pt-14 pb-10 max-w-[1400px] mx-auto px-4"
+      className="pt-14 pb-10 max-w-[1400px] mx-auto sm:px-4"
     >
-      <p className="petit-formal-script-regular flex justify-center text-[60px] text-black">
+      <p className="petit-formal-script-regular flex justify-center text-center text-[30px] sm:text-[60px] text-black">
         To'ygacha qolgan vaqt
       </p>
 

@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <Router>
-      <div className="container mx-auto px-36">
+<div className="container mx-auto  sm:px-6 lg:px-36">
         <audio ref={audioRef} src="/romantic.mp3" loop />
         
         <Routes>

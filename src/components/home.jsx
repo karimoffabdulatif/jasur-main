@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { CgPlayButtonO, CgPlayPauseO } from 'react-icons/cg';
-import Gl from '../assets/gl.jpg';  // Surat manzilingizga qarab o'zgartiring
+import Gl from '../assets/gl7.jpg';
 
 const Home = () => {
   const audioRef = useRef(null);
@@ -22,12 +22,12 @@ const Home = () => {
   return (
     <section>
       <audio ref={audioRef} src="/romantic.mp3" loop />
-      <div className="bg-black rounded-4xl mt-8 max-w-[1400px] mx-auto pb-8 px-6">
+      <div className="bg-black sm:rounded-4xl sm:mt-8 mx-auto  sm:pb-18 sm:px-6">
         <motion.p
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-white pt-10 text-center font-serif text-lg"
+          className="text-white pt-6 sm:pt-10 text-center font-serif sm:text-lg"
         >
           SANANI YODDA TUTING
         </motion.p>
@@ -36,7 +36,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="petit-formal-script-regular text-[50px] flex justify-center pt-4 text-white"
+          className="petit-formal-script-regular text-[25px] sm:text-[50px] flex justify-center pt-2 sm:pt-4 text-white"
         >
           Jasurbek & Muxlisaxon
         </motion.h1>
@@ -45,33 +45,48 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-white font-serif text-2xl flex justify-center"
+          className="text-white font-serif text-[22px] sm:text-2xl flex justify-center"
         >
           Iyun 28, 2025
         </motion.p>
 
-        <motion.p
+          <motion.p
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-white font-serif flex justify-center text-[25px] pt-4"
+          className="flex text-white font-serif text-[18px] sm:text-[25px] sm:pt-4 justify-center"
         >
           Andijon, Qo'rg'ontepa
         </motion.p>
 
-        <div className="flex justify-center pt-6">
-          <img src={Gl} alt="To'y rasmi" className="w-[350px] h-auto bg-white p-1 rounded-lg" />
-        </div>
+        {/* Rasm konteyneri */}
+      <div className='relative'>
+  <div className="sm:flex sm:justify-center sm:pb-5 sm:pt-6">
+    <img
+      src={Gl}
+      alt="To'y rasmi"
+      className="w-full h-screen object-cover sm:h-auto sm:w-[300px] border border-white"
+    />
+  </div>
 
-        <div className="flex items-center justify-center pt-4 gap-6">
-          <button onClick={toggleAudio} aria-label={isPlaying ? 'Pause music' : 'Play music'}>
-            {isPlaying ? (
-              <CgPlayPauseO className='text-white text-[70px]' />
-            ) : (
-              <CgPlayButtonO className='text-white text-[70px]' />
-            )}
-          </button>
-        </div>
+  <div
+    className={`
+      absolute 
+      bottom-12 left-1/2 -translate-x-1/2
+       sm:translate-x-0 sm:bottom-auto sm:left-auto sm:pl-[568px] 
+      flex justify-center items-center
+    `}
+  >
+    <button onClick={toggleAudio} aria-label={isPlaying ? 'Pause music' : 'Play music'}>
+      {isPlaying ? (
+        <CgPlayPauseO className='text-white text-[70px] sm:text-[50px]' />
+      ) : (
+        <CgPlayButtonO className='text-white text-[70px] sm:text-[50px]' />
+      )}
+    </button>
+  </div>
+</div>
+
       </div>
     </section>
   );
