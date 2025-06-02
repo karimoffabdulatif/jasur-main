@@ -72,12 +72,16 @@ const Contact = () => {
           www.karimoff-dev.uz
         </motion.p>
 
-        <motion.button
-          variants={itemVariants}
-          className="bg-white text-black justify-center flex items-center text-[18px] px-8 py-1 rounded-full border-2 border-black hover:bg-white hover:text-black transition-all duration-300 shadow-md hover:shadow-lg mx-auto mt-6 sm:mt-2 animate-pulse"
-        >
-          Tashrif buyurish
-        </motion.button>
+    <motion.a
+  variants={itemVariants}
+  href="https://karimoff-dev.uz"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-black justify-center flex items-center text-[18px] px-8 py-1 rounded-full border-2 border-black hover:bg-white hover:text-black transition-all duration-300 shadow-md hover:shadow-lg mx-auto mt-6 sm:mt-2 animate-pulse"
+>
+  Tashrif buyurish
+</motion.a>
+
 
         <motion.p
           variants={itemVariants}
