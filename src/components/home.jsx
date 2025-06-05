@@ -47,7 +47,7 @@ const Home = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-white font-serif text-[22px] sm:text-2xl flex justify-center"
         >
-          Iyun 28, 2025
+          Iyun 29, 2025
         </motion.p>
 
           <motion.p
