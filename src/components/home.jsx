@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { CgPlayButtonO, CgPlayPauseO } from 'react-icons/cg';
-import Gl from '../assets/gl7.jpg';
+import Gl from '../../public/gl7.jpg';
 
 const Home = () => {
   const audioRef = useRef(null);
