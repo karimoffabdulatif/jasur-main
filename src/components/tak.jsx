@@ -36,7 +36,7 @@ const Tak = () => {
           {[
             "Sizni to‘y tantanamizga taklif qilishdan mamnunmiz!",
             "Bu bizning oilalarimiz uchun juda muhim kun bo‘lib, uni biz uchun eng yaqin va qadrli insonlar bilan birga nishonlash juda muhimdir.",
-            "28.06.2025"
+            "29.06.2025"
           ].map((text, index) => (
             <motion.p
               key={index}

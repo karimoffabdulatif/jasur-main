@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <section>
-      <audio ref={audioRef} src="/romantic.mp3" loop />
+      <audio ref={audioRef} src="/Fly_3.mp3" loop />
       <div className="bg-black sm:rounded-4xl sm:mt-8 mx-auto  sm:pb-18 sm:px-6">
         <motion.p
           initial={{ opacity: 0, y: 50 }}
@@ -47,7 +47,7 @@ const Home = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-white font-serif text-[22px] sm:text-2xl flex justify-center"
         >
-          Iyun 28, 2025
+          Iyun 29, 2025
         </motion.p>
 
           <motion.p
@@ -62,11 +62,18 @@ const Home = () => {
         {/* Rasm konteyneri */}
       <div className='relative'>
   <div className="sm:flex sm:justify-center sm:pb-5 sm:pt-6">
-    <img
-      src={Gl}
-      alt="To'y rasmi"
-      className="w-full h-screen object-cover sm:h-auto sm:w-[300px] border border-white"
-    />
+<motion.div
+  initial={{ height: 0, opacity: 0 }}
+  animate={{ height: 'auto', opacity: 1 }}
+  transition={{ duration: 1.5, ease: 'easeInOut', delay: 1 }}
+  className="overflow-hidden w-full h-screen sm:h-auto sm:w-[300px] border border-white"
+>
+  <img
+    src={Gl}
+    alt="To'y rasmi"
+    className="w-full h-full object-cover"
+  />
+</motion.div>
   </div>
 
   <div

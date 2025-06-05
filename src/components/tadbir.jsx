@@ -20,6 +20,7 @@ const Tadbir = () => {
 
           <div className='relative  sm:w-[510px] sm:h-[600px] mt-10 sm:mt-10 mx-auto sm:ml-[40px]'>
             <div className="absolute  inset-0 bg-gray-200 rounded-3xl -rotate-[7deg] scale-105 -z-10"></div>
+            
             <img
               src={Gl4}
               alt="img"
