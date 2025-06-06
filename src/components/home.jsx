@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <section>
-      <audio ref={audioRef} src="/Fly_3.mp3" loop autoPlay />
+      <audio ref={audioRef} src="/Fly.mp3" loop autoPlay />
       <div className="bg-black sm:rounded-4xl sm:mt-8 mx-auto  sm:pb-18 sm:px-6">
         <motion.p
           initial={{ opacity: 0, y: 50 }}
