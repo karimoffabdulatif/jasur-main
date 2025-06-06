@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <section>
-      <audio ref={audioRef} src="/Fly_3.mp3" loop />
+      <audio ref={audioRef} src="/Fly_3.mp3" loop autoPlay />
       <div className="bg-black sm:rounded-4xl sm:mt-8 mx-auto  sm:pb-18 sm:px-6">
         <motion.p
           initial={{ opacity: 0, y: 50 }}
@@ -66,9 +66,9 @@ const Home = () => {
   initial={{ opacity: 0, y: -50 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{
-    duration: 2,         // Sekinroq chiqishi uchun
+    duration: 2,
     delay: 1,
-    ease: 'easeInOut'    // Silliq chiqish uchun
+    ease: 'easeInOut'    
   }}
   src={Gl}
   alt="To'y rasmi"
