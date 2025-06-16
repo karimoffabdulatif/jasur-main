@@ -35,13 +35,13 @@ const Tadbir = () => {
             </p>
 
             <div className="text-center font-serif">
-              <p className="text-3xl font-semibold">18:00</p>
-              <p className="text-base sm:text-2xl">Mehmonlarning yig‘ilishi</p>
+              <p className="text-3xl font-semibold">07:00</p>
+              <p className="text-base sm:text-2xl">Nahorgi osh</p>
             </div>
 
             <div className="text-center font-serif">
-              <p className="text-3xl font-semibold">19:00</p>
-              <p className="text-base sm:text-2xl">Tantana boshlanishi</p>
+              <p className="text-3xl font-semibold">11:00</p>
+              <p className="text-base sm:text-2xl">Ayollar bazmi</p>
             </div>
 
             <div className="text-center font-serif">
